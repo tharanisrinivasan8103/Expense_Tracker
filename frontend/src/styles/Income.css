@@ -1,0 +1,214 @@
+/* ===== Income.css ===== */
+
+/* Layout */
+.income-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f4f6;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.sidebar .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .user img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  margin-bottom: 12px;
+}
+
+.sidebar .user p {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.sidebar .user span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Sidebar Navigation */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar nav a:hover {
+  background: #f3f4f6;
+}
+
+.sidebar nav a.active {
+  background: #9333ea;
+  color: white;
+  font-weight: 600;
+}
+
+/* Logout Button */
+.sidebar .logout {
+  margin-top: auto;
+  padding: 10px 14px;
+  color: #ef4444;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.sidebar .logout:hover {
+  background: #fee2e2;
+}
+
+/* ===== Main Content ===== */
+.income-container {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.income-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* ===== Form ===== */
+.income-form {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.income-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.income-form input:focus {
+  border-color: #9333ea;
+}
+
+.income-form button {
+  background: #22c55e;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.income-form button:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+/* ===== Income List ===== */
+.income-list {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.income-list h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.income-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+}
+
+.income-item:hover {
+  background: #f3f4f6;
+}
+
+.income-amount {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.income-item button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.income-item button:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+/* ===== Chart Section ===== */
+.income-chart {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.income-chart h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
